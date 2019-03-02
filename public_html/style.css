@@ -8,3 +8,31 @@ html, body{
     font-family: 'Source Sans Pro', sans-serif;
     padding-top: 36px;
 }
+
+.header {
+    height: 184px;
+    background-color: #1a1a1a;
+}
+
+.photo {
+    padding-top: 17px;
+}
+
+.headline {
+    font-family: 'Arimo', sans-serif;
+    color: white;
+}
+.headline h1 {
+    font-weight: 700;
+}
+.headline h2 {
+    font-weight: 400;
+}
+.headline span {
+    color: #ff6600;
+}
+
+.maincollumn h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ff6600;
+}
