@@ -54,6 +54,7 @@ html, body{
 
 .maincollumn {
     background-color: white;
+    padding-left: 4%;
 }
 .maincollumn h2 {
     font-family: 'Oswald', sans-serif;
@@ -63,6 +64,9 @@ html, body{
 .maincollumn p {
     margin-bottom: 0;
     color: #737373;
+}
+.bottomcolumn {
+    padding-left: 0;
 }
 .titleprof{
     font-weight: bold;
