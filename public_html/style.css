@@ -6,7 +6,7 @@ html, body{
     font-size: 16px;
     height:100%;
     font-family: 'Source Sans Pro', sans-serif;
-    padding-top: 36px;
+    padding-top: 7px;
     background-color: #ff6600;
 }
 
@@ -17,14 +17,17 @@ html, body{
 
 .photo {
     padding-top: 17px;
+    padding-left: 42px;
 }
 
 .headline {
     font-family: 'Arimo', sans-serif;
     color: white;
+    padding-left: 42px;
 }
 .headline h1 {
     margin-bottom: 0;
+    padding-top: 32px;
     font-weight: 700;
     font-size: 36pt;
     letter-spacing: 4px;
