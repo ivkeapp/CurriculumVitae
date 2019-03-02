@@ -60,6 +60,17 @@ html, body{
     color: #ff6600;
 }
 
+.maincollumn p {
+    margin-bottom: 0;
+    color: #737373;
+}
+.titleprof{
+    font-weight: bold;
+}
+.school {
+    font-size: 10pt;
+}
+
 .experiencecollumn {
     background-color: #e6e6e6;
 }
@@ -79,4 +90,5 @@ html, body{
 .experiencecollumn p{
     margin-left: 36px;
     font-size: 11pt;
+    color: #1a1a1a;
 }
