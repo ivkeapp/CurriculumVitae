@@ -7,6 +7,7 @@ html, body{
     height:100%;
     font-family: 'Source Sans Pro', sans-serif;
     padding-top: 36px;
+    background-color: #ff6600;
 }
 
 .header {
@@ -32,7 +33,14 @@ html, body{
     color: #ff6600;
 }
 
+.maincollumn {
+    background-color: white;
+}
 .maincollumn h2 {
     font-family: 'Oswald', sans-serif;
     color: #ff6600;
+}
+
+.experiencecollumn {
+    background-color: #e6e6e6;
 }
