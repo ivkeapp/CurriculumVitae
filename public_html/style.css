@@ -25,6 +25,7 @@ html, body{
     color: white;
     padding-left: 42px;
 }
+
 .headline h1 {
     margin-bottom: 0;
     padding-top: 32px;
@@ -42,6 +43,15 @@ html, body{
     color: #ff6600;
 }
 
+@media only screen and (max-width: 768px) {
+    .headline h1 {
+    font-size: 24pt;
+}
+    .headline h2 {
+    font-size: 10pt;
+}
+}
+
 .maincollumn {
     background-color: white;
 }
@@ -52,4 +62,21 @@ html, body{
 
 .experiencecollumn {
     background-color: #e6e6e6;
+}
+
+.experiencecollumn h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 17pt;
+    font-weight: bold;
+    color: #737373;
+    text-align: right;
+    display: block;
+}
+
+
+.experiencecollumn p{
+    margin-left: 36px;
+    font-size: 11pt;
 }
