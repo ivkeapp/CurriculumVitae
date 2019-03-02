@@ -45,11 +45,11 @@ html, body{
 
 @media only screen and (max-width: 768px) {
     .headline h1 {
-    font-size: 24pt;
-}
+        font-size: 24pt;
+    }
     .headline h2 {
-    font-size: 10pt;
-}
+        font-size: 10pt;
+    }
 }
 
 .maincollumn {
@@ -77,22 +77,99 @@ html, body{
 
 .experiencecollumn {
     background-color: #e6e6e6;
+    padding-left: 0;
+    padding-right: 0;
 }
-
 .experiencecollumn h2 {
     margin-bottom: 0;
     margin-top: 0;
     padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 17pt;
     font-weight: bold;
     color: #737373;
     text-align: right;
     display: block;
 }
-
-
 .experiencecollumn p{
     margin-left: 36px;
+    padding-right: 15px;
     font-size: 11pt;
     color: #1a1a1a;
+}
+.skills {
+    background-color: #1a1a1a;
+    margin-top: 48px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+}
+.skills h3{
+    color: white;
+    padding-top: 10px;
+}
+.skills p{
+    color: white;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+
+.empty .bar{
+    display: block;
+    height: 10px;
+    width: 52%;
+    padding-right: 15px;
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+.empty {
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.empty .js{
+    display: block;
+    height: 10px;
+    width: 10%;
+    padding-right: 15px;
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+.empty .html5{
+    display: block;
+    height: 10px;
+    width: 48%;
+    padding-right: 15px;
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+.empty .css3{
+    display: block;
+    height: 10px;
+    width: 40%;
+    padding-right: 15px;
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+.empty .sql{
+    display: block;
+    height: 10px;
+    width: 35%;
+    padding-right: 15px;
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+.empty .php{
+    display: block;
+    height: 10px;
+    width: 5%;
+    padding-right: 15px;
+    background-color: #ff6600;
+    border-radius: 5px;
 }
