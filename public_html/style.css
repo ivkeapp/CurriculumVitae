@@ -24,10 +24,16 @@ html, body{
     color: white;
 }
 .headline h1 {
+    margin-bottom: 0;
     font-weight: 700;
+    font-size: 36pt;
+    letter-spacing: 4px;
 }
 .headline h2 {
+    margin-top: 0;
     font-weight: 400;
+    font-size: 15pt;
+    letter-spacing: 1.9px;
 }
 .headline span {
     color: #ff6600;
