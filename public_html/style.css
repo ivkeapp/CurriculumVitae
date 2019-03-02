@@ -43,7 +43,7 @@ html, body{
     color: #ff6600;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     .headline h1 {
         font-size: 24pt;
     }
@@ -51,10 +51,13 @@ html, body{
         font-size: 10pt;
     }
 }
-
+.maincoll {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .maincollumn {
     background-color: white;
-    padding-left: 4%;
+    padding: 0;
 }
 .maincollumn h2 {
     font-family: 'Oswald', sans-serif;
@@ -79,6 +82,7 @@ html, body{
     background-color: #e6e6e6;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 59px;
 }
 .experiencecollumn h2 {
     margin-bottom: 0;
@@ -100,14 +104,13 @@ html, body{
 }
 .skills {
     background-color: #1a1a1a;
-    margin-top: 48px;
-    padding-bottom: 18px;
+    padding-bottom: 42px;
     padding-left: 36px;
     padding-right: 36px;
 }
 .skills h3{
     color: white;
-    padding-top: 10px;
+    padding-top: 40px;
 }
 .skills p{
     color: white;
@@ -119,7 +122,7 @@ html, body{
 .empty .bar{
     display: block;
     height: 10px;
-    width: 52%;
+    width: 56%;
     padding-right: 15px;
     background-color: #ff6600;
     border-radius: 5px;
@@ -172,4 +175,21 @@ html, body{
     padding-right: 15px;
     background-color: #ff6600;
     border-radius: 5px;
+}
+
+.bottomcolumn{
+    padding-bottom: 12px;
+}
+
+.projects {
+    background-color: #e6e6e6;
+}
+.projects p{
+    padding-bottom: 12px;
+}
+.projects h2 {
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
