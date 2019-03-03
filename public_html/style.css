@@ -23,14 +23,24 @@ html, body{
 }
 
 .photo {
-    padding-top: 17px;
-    padding-left: 42px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: url('img/photo.png');
+    margin-top: 17px;
+    margin-left: 100px;
 }
 
 .headline {
     font-family: 'Arimo', sans-serif;
     color: white;
-    padding-left: 42px;
+    padding-left: 180px;
+}
+
+@media only screen and (max-width: 768px){
+    .headline {
+        padding-left: 30px;
+    }
 }
 
 .headline h1 {
@@ -50,7 +60,7 @@ html, body{
     color: #ff6600;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
     .headline h1 {
         font-size: 24pt;
     }
@@ -111,13 +121,13 @@ html, body{
 }
 .skills {
     background-color: #1a1a1a;
-    padding-bottom: 42px;
+    padding-bottom: 48px;
     padding-left: 36px;
     padding-right: 36px;
 }
 .skills h3{
     color: white;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 .skills p{
     color: white;
@@ -254,4 +264,11 @@ html, body{
 .footer a{
     text-decoration: none;
     color: white;
+    font-size: 11pt;
+}
+
+@media only screen and (max-width: 900px){
+    .footer a span{
+        display: none;
+    }
 }
