@@ -20,9 +20,21 @@
 
                 <div class="container">
                     <div class="row">
-                        <div class="header"> 
-                            <div class="photo hidden-xs hidden-sm col-lg-4 col-md-4 col-sm-4">
+                        <div class="header">
+                            <div class="perspective3dholder col-lg-4 col-md-4 hidden-xs hidden-sm">
+                                <div class="circle">
+                                    <div class="front_circle frontside"></div>
+                                    <div class="front_circle backside"></div>
+                                </div>
                             </div>
+                            <script>
+                                var card = document.querySelector('.circle');
+                                card.addEventListener('click', function () {
+                                    card.classList.toggle('is-flipped');
+                                });
+                            </script>
+                            <!--                            <div class="photo hidden-xs hidden-sm col-lg-4 col-md-4">
+                                                        </div>-->
                             <div class="headline col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                 <h1><span>IVAN</span> ŽARKOVIĆ</h1>
                                 <h2>
@@ -32,33 +44,33 @@
                         </div>
                     </div>
                 </div>
-                </header>
-                <section class="first">
-                    <div class="container">
-                        <div class="row">
-                            <div class="experiencecollumn col-lg-4 col-md-4">
-                                <div class="workexp">WORK EXPERIENCE</div>
-                                <h2>2018 - 2019</h2>
-                                <p><img src="img/dot.svg"> Logistic administrator at Nepo System d.o.o.</p>
-                                <p><img src="img/dot.svg"> Internship at Statistical Office of the Republic of Serbia</p>
-                                <p><img src="img/dot.svg"> Freelancer on Upwork platform</p>
-                                <h2>2016 - 2017</h2>
-                                <p><img src="img/dot.svg"> Parking attendant at “JKP Parking Servis”</p>
-                                <h2>2015</h2>
-                                <p><img src="img/dot.svg"> Technician for assembling PCs at KimTec, Belgrade</p>
-                                <h2>2014</h2>
-                                <p><img src="img/dot.svg"> Network operator, software and hardware assistant 
-                                    for printing press firm Aja Grafika</p>
-                                <h2>2007-2009</h2>
-                                <p><img src="img/dot.svg"> Active member of Pedagogical society of Serbia,
-                                    managing workshops for non violent communication
-                                    and mediation in cooperation with Germany GTZ</p>
+            </header>
+            <section class="first">
+                <div class="container">
+                    <div class="row">
+                        <div class="experiencecollumn col-lg-4 col-md-4">
+                            <div class="workexp">WORK EXPERIENCE</div>
+                            <h2>2018 - 2019</h2>
+                            <p><img src="img/dot.svg"> Logistic administrator at Nepo System d.o.o.</p>
+                            <p><img src="img/dot.svg"> Internship at Statistical Office of the Republic of Serbia</p>
+                            <p><img src="img/dot.svg"> Freelancer on Upwork platform</p>
+                            <h2>2016 - 2017</h2>
+                            <p><img src="img/dot.svg"> Parking attendant at “JKP Parking Servis”</p>
+                            <h2>2015</h2>
+                            <p><img src="img/dot.svg"> Technician for assembling PCs at KimTec, Belgrade</p>
+                            <h2>2014</h2>
+                            <p><img src="img/dot.svg"> Network operator, software and hardware assistant 
+                                for printing press firm Aja Grafika</p>
+                            <h2>2007-2009</h2>
+                            <p><img src="img/dot.svg"> Active member of Pedagogical society of Serbia,
+                                managing workshops for non violent communication
+                                and mediation in cooperation with Germany GTZ</p>
 
-                                
-                            </div>
 
-                            <div class="maincollumn col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                <section class="maincoll">
+                        </div>
+
+                        <div class="maincollumn col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <section class="maincoll">
                                 <div class="row">
                                     <h2>IN SHORT</h2>
                                     <p>Enthusiastic young self-taught computer Geek 
@@ -102,63 +114,63 @@
                                     </div>
 
                                 </div>
-                                    </section>
-                                
-                            </div>
-                        </div>
+                            </section>
 
+                        </div>
                     </div>
-                </section>
-            <section class="second">
-            <div class="container">
-                <div class="row"><div class="skills col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                    <h3>SKILLS</h3>
-                                    <p>Java 8</p>
-                                    <span class="empty"><span class="bar"></span></span>
-                                    <p>JavaScript</p>
-                                    <span class="empty"><span class="js"></span></span>
-                                    <p>HTML5</p>
-                                    <span class="empty"><span class="html5"></span></span>
-                                    <p>CSS3</p>
-                                    <span class="empty"><span class="css3"></span></span>
-                                    <p>SQL</p>
-                                    <span class="empty"><span class="sql"></span></span>
-                                    <p>PHP</p>
-                                    <span class="empty"><span class="php"></span></span>
-                                </div>
-                    <section class="projects col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                    <h2>PROJECTS</h2>
-                                    <div class="projects col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <p class="titleprof">Zdravlje je Lepota</p>
-                                    <p>Web presentation for physiotherapy ordination
-                                        in Belgrade. This website is based on
-                                        responsive modern design with built-in
-                                        Google map and PHP contact form.
-                                        More on: https://fizikalnamedicina.rs</p>
-                                    <p class="titleprof">Stock Trading desktop application</p>
-                                    <p>Java based program made for client needs.
-                                        Application is using Apache POI library
-                                        for fetching data from Excel file and
-                                        writing calculations to another xmls file.</p>
-                                    </div>
-                                    <div class="projects2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <p class="titleprof2 bolded">Application for scanning prices</p>
-                                    <p class="titleprof2">Scanning and storing prices in database of
-                                        products in specific shops. This Android
-                                        application is developed for needs of
-                                        Statistical Office of the Republic of Serbia.
-                                        </p>
-                                    <p class="titleprof2 bolded">Weather Application</p>
-                                    <p class="titleprof2">Desktop application - Java based program
-                                        with SQL database and custom search engine
-                                        for browsing cities from database.
-                                        Application is using OpenWeather API
-                                        (parsing JSON and displaying data to user).
-                                        </p>
-                                    </div>
-                                </section>
+
                 </div>
-            </div>
+            </section>
+            <section class="second">
+                <div class="container">
+                    <div class="row"><div class="skills col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <h3>SKILLS</h3>
+                            <p>Java 8</p>
+                            <span class="empty"><span class="bar"></span></span>
+                            <p>JavaScript</p>
+                            <span class="empty"><span class="js"></span></span>
+                            <p>HTML5</p>
+                            <span class="empty"><span class="html5"></span></span>
+                            <p>CSS3</p>
+                            <span class="empty"><span class="css3"></span></span>
+                            <p>SQL</p>
+                            <span class="empty"><span class="sql"></span></span>
+                            <p>PHP</p>
+                            <span class="empty"><span class="php"></span></span>
+                        </div>
+                        <section class="projects col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <h2>PROJECTS</h2>
+                            <div class="projects col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <p class="titleprof">Zdravlje je Lepota</p>
+                                <p>Web presentation for physiotherapy ordination
+                                    in Belgrade. This website is based on
+                                    responsive modern design with built-in
+                                    Google map and PHP contact form.
+                                    More on: https://fizikalnamedicina.rs</p>
+                                <p class="titleprof">Stock Trading desktop application</p>
+                                <p>Java based program made for client needs.
+                                    Application is using Apache POI library
+                                    for fetching data from Excel file and
+                                    writing calculations to another xmls file.</p>
+                            </div>
+                            <div class="projects2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <p class="titleprof2 bolded">Application for scanning prices</p>
+                                <p class="titleprof2">Scanning and storing prices in database of
+                                    products in specific shops. This Android
+                                    application is developed for needs of
+                                    Statistical Office of the Republic of Serbia.
+                                </p>
+                                <p class="titleprof2 bolded">Weather Application</p>
+                                <p class="titleprof2">Desktop application - Java based program
+                                    with SQL database and custom search engine
+                                    for browsing cities from database.
+                                    Application is using OpenWeather API
+                                    (parsing JSON and displaying data to user).
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </section>
         </main>
 
