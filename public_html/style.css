@@ -94,12 +94,19 @@ html, body{
 .school {
     font-size: 10pt;
 }
-
+.workexp {
+    font-family: 'Oswald', sans-serif;
+    color: #737373;
+    padding-right: 15px;
+    margin-top: 15px;
+    font-size: 22pt;
+    text-align: right;
+}
 .experiencecollumn {
     background-color: #e6e6e6;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 59px;
+    padding-bottom: 30px;
 }
 .experiencecollumn h2 {
     margin-bottom: 0;
@@ -118,6 +125,7 @@ html, body{
     padding-right: 15px;
     font-size: 11pt;
     color: #1a1a1a;
+    text-align: right;
 }
 .skills {
     background-color: #1a1a1a;
