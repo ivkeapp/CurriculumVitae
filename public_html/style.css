@@ -17,6 +17,45 @@ html, body{
     background-color: #e6e6e6;
 }
 
+/*Animating circle image*/
+.perspective3dholder {
+    width: 180px;
+    height: 150px;
+    margin-top: 17px;
+    margin-left: 100px;
+    perspective: 600px;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.front_circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.frontside {
+    border-radius: 50%;
+    background-image: url('img/photo.png');
+}
+
+.backside {
+    border-radius: 50%;
+    background: #ff6600;
+    transform: rotateY( 180deg );
+}
+
+.circle.is-flipped {
+    transform: rotateY(180deg);
+}
+/*Animating circle image*/
 .header {
     height: 184px;
     background-color: #1a1a1a;
@@ -74,7 +113,7 @@ html, body{
 }
 .maincollumn {
     background-color: white;
-    
+
 }
 .maincollumn h2 {
     font-family: 'Oswald', sans-serif;
@@ -227,14 +266,14 @@ html, body{
 
 @media only screen and (max-width: 900px) {
     .projects2 {
-    padding-left: 15px;
-}
-.projects2 p{
-    padding-left: 15px;
-}
-.projects2 .titleprof2{
-    padding-left: 15px;
-}
+        padding-left: 15px;
+    }
+    .projects2 p{
+        padding-left: 15px;
+    }
+    .projects2 .titleprof2{
+        padding-left: 15px;
+    }
 }
 .bolded{
     font-weight: bold;
@@ -262,7 +301,7 @@ html, body{
 }
 .phone {
     padding-top: 10px;
-    
+
 }
 
 .icons {
