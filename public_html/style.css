@@ -10,6 +10,13 @@ html, body{
     background-color: #ff6600;
 }
 
+.first .container {
+    background-color: #e6e6e6;
+}
+.second .container {
+    background-color: #e6e6e6;
+}
+
 .header {
     height: 184px;
     background-color: #1a1a1a;
@@ -57,7 +64,7 @@ html, body{
 }
 .maincollumn {
     background-color: white;
-    padding: 0;
+    
 }
 .maincollumn h2 {
     font-family: 'Oswald', sans-serif;
@@ -183,13 +190,43 @@ html, body{
 
 .projects {
     background-color: #e6e6e6;
+    padding: 0;
+}
+
+.projects h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ff6600;
+}
+.projects2 {
+    padding: 0;
+}
+.projects2 p{
+    padding: 0;
+}
+.projects2 .titleprof2{
+    padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .projects2 {
+    padding-left: 15px;
+}
+.projects2 p{
+    padding-left: 15px;
+}
+.projects2 .titleprof2{
+    padding-left: 15px;
+}
+}
+.bolded{
+    font-weight: bold;
 }
 .projects p{
-    padding-bottom: 12px;
+    padding-left: 30px;
 }
 .projects h2 {
     margin: 0;
-    padding-left: 15px;
+    padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
 }
