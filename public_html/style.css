@@ -248,9 +248,19 @@ html, body{
 .projects {
     background-color: #e6e6e6;
     padding: 0;
+    
 }
 
-.projects h2 {
+.projects p a{
+    color: #1a1a1a;
+}
+.projects p a:hover{
+    color: #ff6600;
+}
+
+.projects p a {text-decoration: none;}
+
+.projects1 h2 {
     font-family: 'Oswald', sans-serif;
     color: #ff6600;
 }
@@ -282,7 +292,7 @@ html, body{
     padding-left: 30px;
     padding-right: 5px;
 }
-.projects h2 {
+.projects1 h2 {
     margin: 0;
     padding-left: 30px;
     padding-top: 20px;
@@ -312,6 +322,9 @@ html, body{
     text-decoration: none;
     color: white;
     font-size: 11pt;
+}
+.footer a:hover{
+    color: #ffd1b3;
 }
 
 @media only screen and (max-width: 900px){
