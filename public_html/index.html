@@ -24,43 +24,96 @@
 
             gtag('config', 'UA-136089696-1');
         </script>
+        <!-- Removing load screen after page is fully loaded -->
+        <script>
+            window.addEventListener('load', function () {
+                var load = document.getElementById("loadscr");
+                document.body.removeChild(load);
+            })
+        </script>
     </head>
     <body>
+        <div id="loadscr">
+            <div id="loading">
+                Loading...
+            </div>
+        </div>
         <main>
             <header>
-
                 <div class="container">
-                    <div class="row">
-                        <div class="header">
-                            <div class="perspective3dholder col-lg-4 col-md-4 hidden-xs hidden-sm">
-                                <div class="circle">
-                                    <div class="front_circle frontside"></div>
-                                    <div class="front_circle backside">
-                                        Basic info:<br>
-                                        From Belgrade,<br>
-                                        28 years old,<br>
-                                        Father of two
-                                    </div>
+                    <nav class="navbar navbar-default navbar-light">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Projects</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     width="19px" height="19px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+                                        <g>
+                                        <g>
+                                        <g>
+                                        <path id="linkedin" fill="#1a1a1a" d="M15.742,0.001H1.255c-0.691,0-1.253,0.55-1.253,1.224v14.548c0,0.68,0.562,1.227,1.253,1.227h14.487
+                                              C16.432,17,17,16.453,17,15.773V1.226C17,0.552,16.432,0.001,15.742,0.001z M5.044,14.488H2.52V6.375h2.524V14.488z M3.782,5.266
+                                              c-0.809,0-1.461-0.654-1.461-1.464c0-0.805,0.652-1.461,1.461-1.461c0.807,0,1.463,0.656,1.463,1.461
+                                              C5.245,4.612,4.589,5.266,3.782,5.266z M14.484,14.488h-2.519v-3.946c0-0.939-0.019-2.151-1.311-2.151
+                                              c-1.313,0-1.513,1.025-1.513,2.082v4.016H6.625V6.375h2.417v1.107h0.034c0.337-0.636,1.159-1.311,2.386-1.311
+                                              c2.551,0,3.023,1.68,3.023,3.864V14.488z"/>
+                                        </g>
+                                        </g>
+                                        </g>
+                                        </svg></a></li>
+                                <li><a href="#"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                     width="19px" height="19px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                        <path id="github" fill-rule="evenodd" clip-rule="evenodd" fill="#1a1a1a" d="M19.927,0.564C8.923,0.564,0,9.487,0,20.491
+                                              C0,29.3,5.71,36.769,13.63,39.403c0.996,0.183,1.359-0.435,1.359-0.961c0-0.473-0.017-1.728-0.026-3.392
+                                              c-5.544,1.204-6.713-2.67-6.713-2.67c-0.906-2.303-2.212-2.915-2.212-2.915c-1.81-1.236,0.137-1.211,0.137-1.211
+                                              c2,0.141,3.052,2.054,3.052,2.054c1.778,3.043,4.665,2.165,5.8,1.657c0.182-1.29,0.696-2.168,1.266-2.666
+                                              c-4.425-0.505-9.078-2.214-9.078-9.849c0-2.175,0.776-3.954,2.051-5.346C9.06,13.6,8.376,11.572,9.46,8.829
+                                              c0,0,1.673-0.537,5.48,2.044c1.59-0.444,3.294-0.664,4.989-0.671c1.692,0.007,3.397,0.227,4.989,0.671
+                                              c3.806-2.581,5.476-2.044,5.476-2.044c1.087,2.743,0.402,4.771,0.198,5.276c1.276,1.392,2.048,3.171,2.048,5.346
+                                              c0,7.655-4.659,9.341-9.1,9.833c0.716,0.616,1.354,1.833,1.354,3.691c0,2.664-0.024,4.813-0.024,5.468
+                                              c0,0.533,0.359,1.152,1.37,0.958c7.912-2.642,13.616-10.104,13.616-18.909C39.856,9.487,30.935,0.564,19.927,0.564z"/>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+
+                    </nav>
+                </div>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="header">
+                        <div class="perspective3dholder col-lg-4 col-md-4 hidden-xs hidden-sm">
+                            <div class="circle">
+                                <div class="front_circle frontside"></div>
+                                <div class="front_circle backside">
+                                    Basic info:<br>
+                                    From Belgrade,<br>
+                                    28 years old<br>
+
                                 </div>
                             </div>
-                            <script>
-                                var card = document.querySelector('.circle');
-                                card.addEventListener('click', function () {
-                                    card.classList.toggle('is-flipped');
-                                });
-                            </script>
-                            <!--                            <div class="photo hidden-xs hidden-sm col-lg-4 col-md-4">
-                                                        </div>-->
-                            <div class="headline col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                <h1><span>IVAN</span> ŽARKOVIĆ</h1>
-                                <h2>
-                                    FRONT-END <span>JAVA</span> & WEB DEVELOPER
-                                </h2>
-                            </div>
+                        </div>
+                        <script>
+                            var card = document.querySelector('.circle');
+                            card.addEventListener('click', function () {
+                                card.classList.toggle('is-flipped');
+                            });
+                        </script>
+                        <!--                            <div class="photo hidden-xs hidden-sm col-lg-4 col-md-4">
+                                                    </div>-->
+                        <div class="headline col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                            <h1><span>IVAN</span> ŽARKOVIĆ</h1>
+                            <h2>
+                                FRONT-END <span>JAVA</span> & WEB DEVELOPER
+                            </h2>
                         </div>
                     </div>
                 </div>
-            </header>
+            </div>
+
             <section class="first">
                 <div class="container">
                     <div class="row">
@@ -157,7 +210,7 @@
                         <section class="projects1 col-lg-8 col-md-8 col-sm-12 col-xs-12">
                             <h2>PROJECTS</h2>
                             <div class="projects col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                               
+
                                 <p class="titleprof">Zdravlje je Lepota</p>
                                 <p>Web presentation for physiotherapy ordination
                                     in Belgrade. This web-site is based on
@@ -170,7 +223,7 @@
                                     Application is using Apache POI library
                                     for fetching data from Excel file and
                                     writing calculations to another xmls file.</p>
-                                
+
                             </div>
                             <div class="projects2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <p class="titleprof2 bolded">Application for scanning prices</p>
@@ -212,5 +265,41 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script>
+                            var $window = $(window);
+                            var $elem = $(".bar");
+                            var $elemjs = $(".js");
+                            var $elemhtml = $(".html5");
+                            var $elemcss = $(".css3");
+                            var $elemsql = $(".sql");
+                            var $elemphp = $(".php");
+
+                            function inView($elem, $window) {
+                                var docViewTop = $window.scrollTop();
+                                var docViewBottom = docViewTop + $window.height();
+
+                                var elemTop = $elem.offset().top;
+                                var elemBottom = elemTop + $elem.height();
+
+                                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+                            }
+                            $(document).on("scroll", function () {
+                                if (inView($elem, $window)) {
+                                    $elem.addClass("animate1")
+                                    $elemjs.addClass("animate2")
+                                    $elemhtml.addClass("animate3")
+                                    $elemcss.addClass("animate4")
+                                    $elemsql.addClass("animate5")
+                                    $elemphp.addClass("animate6")
+                                } else {
+                                    $elem.removeClass("animate1")
+                                    $elemjs.removeClass("animate2")
+                                    $elemhtml.removeClass("animate3")
+                                    $elemcss.removeClass("animate4")
+                                    $elemsql.removeClass("animate5")
+                                    $elemphp.removeClass("animate6")
+                                }
+                            });
+        </script>
     </body>
 </html>
